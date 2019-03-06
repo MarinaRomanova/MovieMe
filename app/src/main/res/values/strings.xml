@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">MovieMe</string>
+    <string name="grid_view">Grid View</string>
+    <string name="list_view">List view</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="no_films">No films to display</string>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="settings_sort_by_label">Sort By</string>
+    <string name="settings_sort_by_popularity_label">Popularity</string>
+    <string name="settings_sort_by_vote_average_label">Vote average</string>
+    <string name="settings_sort_by_revenue_label">Revenue</string>
+
+    <string name="settings_sort_by_key" translatable="false">sort_by</string>
+    <string name="settings_order_by_revenue_value" translatable="false">revenue.desc</string>
+    <string name="settings_order_by_popularity_value" translatable="false">popularity.desc</string>
+    <string name="settings_order_by_vote_average_value" translatable="false">vote_average.desc</string>
+    <string name="settings_sort_by_default" translatable="false">@string/settings_order_by_popularity_value</string>
+
+    <string name="settings_genre_id_key" translatable="false">genre_id</string>
+    <string name="settings_genre_id_label">Category</string>
+
+    <string name="settings_genre_id_action_label">Action</string>
+    <string name="settings_genre_id_action_value">28</string>
+    <string name="settings_genre_id_animated_label">animated</string>
+    <string name="settings_genre_id_animated_value">16</string>
+    <string name="settings_genre_id_documentary_label">documentary</string>
+    <string name="settings_genre_id_documentary_value">99</string>
+    <string name="settings_genre_id_drama_label">drama</string>
+    <string name="settings_genre_id_drama_value">18</string>
+    <string name="settings_genre_id_family_label">family</string>
+    <string name="settings_genre_id_family_value">10751</string>
+    <string name="settings_genre_id_fantasy_label">fantasy</string>
+    <string name="settings_genre_id_fantasy_value">14</string>
+    <string name="settings_genre_id_history_label">history</string>
+    <string name="settings_genre_id_history_value">36</string>
+    <string name="settings_genre_id_comedy_label">comedy</string>
+    <string name="settings_genre_id_comedy_value">35</string>
+    <string name="settings_genre_id_war_label">war</string>
+    <string name="settings_genre_id_war_value">10752</string>
+    <string name="settings_genre_id_crime_label">crime</string>
+    <string name="settings_genre_id_crime_value">80</string>
+    <string name="settings_genre_id_music_label">music</string>
+    <string name="settings_genre_id_music_value">10402</string>
+    <string name="settings_genre_id_mystery_label">mystery</string>
+    <string name="settings_genre_id_mystery_value">9648</string>
+    <string name="settings_genre_id_romance_label">romance</string>
+    <string name="settings_genre_id_romance_value">10749</string>
+    <string name="settings_genre_id_sci_fi_value">878</string>
+    <string name="settings_genre_id_sci_fi_label">sci fi</string>
+    <string name="settings_genre_id_horror_label">Horror</string>
+    <string name="settings_genre_id_horror_value">27</string>
+    <string name="settings_genre_id_TV_movie_label">TV movie</string>
+    <string name="settings_genre_id_TV_movie_value">10770</string>
+    <string name="settings_genre_id_thriller_value">53</string>
+    <string name="settings_genre_id_thriller_label">thriller</string>
+    <string name="settings_genre_id_western_label">western</string>
+    <string name="settings_genre_id_western_value">37</string>
+    <string name="settings_genre_id_adventure_label">adventure</string>
+    <string name="settings_genre_id_adventure_value">12</string>
+    <string name="settings_category_default">Choose a category</string>
+
+</resources>

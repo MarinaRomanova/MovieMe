@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_small">
+
+    <ImageView
+        android:id="@+id/thumbnail_list_view"
+        android:layout_width="@dimen/image_thumbnail"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/placeholder"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:paddingLeft="@dimen/padding_large">
+
+        <TextView
+            android:id="@+id/film_title_tv_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title_2"
+            android:textColor="@color/colorTab"
+            android:textStyle="bold"
+            tools:text="Jurassic World"/>
+
+        <TextView
+            android:id="@+id/film_duration_tv_list_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/film_text_view"
+            tools:text="200 min"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

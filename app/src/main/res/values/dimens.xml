@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="padding_small">0.2dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="film_text_view">10sp</dimen>
+    <dimen name="image_thumbnail">55dp</dimen>
+    <dimen name="title_2">18dp</dimen>
+</resources>

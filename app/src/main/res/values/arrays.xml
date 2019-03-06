@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_sort_by_labels">
+        <item>@string/settings_sort_by_popularity_label</item>
+        <item>@string/settings_sort_by_vote_average_label</item>
+        <item>@string/settings_sort_by_revenue_label</item>
+    </string-array>
+
+    <string-array name="settings_sort_by_values">
+        <item>@string/settings_order_by_popularity_value</item>
+        <item>@string/settings_order_by_vote_average_value</item>
+        <item>@string/settings_order_by_revenue_value</item>
+    </string-array>
+
+    <string-array name="settings_genre_id_labels">
+        <item>@string/settings_genre_id_action_label</item>
+        <item>@string/settings_genre_id_animated_label</item>
+        <item>@string/settings_genre_id_documentary_label</item>
+        <item>@string/settings_genre_id_drama_label</item>
+        <item>@string/settings_genre_id_family_label</item>
+        <item>@string/settings_genre_id_fantasy_label</item>
+        <item>@string/settings_genre_id_history_label</item>
+        <item>@string/settings_genre_id_comedy_label</item>
+        <item>@string/settings_genre_id_war_label</item>
+        <item>@string/settings_genre_id_crime_label</item>
+        <item>@string/settings_genre_id_music_label</item>
+        <item>@string/settings_genre_id_mystery_label</item>
+        <item>@string/settings_genre_id_romance_label</item>
+        <item>@string/settings_genre_id_sci_fi_label</item>
+        <item>@string/settings_genre_id_horror_label</item>
+        <item>@string/settings_genre_id_TV_movie_label</item>
+        <item>@string/settings_genre_id_thriller_label</item>
+        <item>@string/settings_genre_id_western_label</item>
+        <item>@string/settings_genre_id_adventure_label</item>
+
+    </string-array>
+
+    <string-array name="settings_genre_id_values">
+        <item>@string/settings_genre_id_action_value</item>
+        <item>@string/settings_genre_id_animated_value</item>
+        <item>@string/settings_genre_id_documentary_value</item>
+        <item>@string/settings_genre_id_drama_value</item>
+        <item>@string/settings_genre_id_family_value</item>
+        <item>@string/settings_genre_id_fantasy_value</item>
+        <item>@string/settings_genre_id_history_value</item>
+        <item>@string/settings_genre_id_comedy_value</item>
+        <item>@string/settings_genre_id_war_value</item>
+        <item>@string/settings_genre_id_crime_value</item>
+        <item>@string/settings_genre_id_music_value</item>
+        <item>@string/settings_genre_id_mystery_value</item>
+        <item>@string/settings_genre_id_romance_value</item>
+        <item>@string/settings_genre_id_sci_fi_value</item>
+        <item>@string/settings_genre_id_horror_value</item>
+        <item>@string/settings_genre_id_TV_movie_value</item>
+        <item>@string/settings_genre_id_thriller_value</item>
+        <item>@string/settings_genre_id_western_value</item>
+        <item>@string/settings_genre_id_adventure_value</item>
+
+    </string-array>
+
+
+</resources>
