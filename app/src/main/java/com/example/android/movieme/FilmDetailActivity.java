@@ -1,24 +1,15 @@
 package com.example.android.movieme;
 
-import android.app.LoaderManager;
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.content.Loader;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.android.movieme.Utils.ImageLoader;
+import com.squareup.picasso.Picasso;
 
-public class FilmDetailActivity extends FragmentActivity implements android.support.v4.app.LoaderManager.LoaderCallbacks<Bitmap> {
+public class FilmDetailActivity extends FragmentActivity {
     private static final String TAG = FilmDetailActivity.class.getSimpleName();
-    private static final int IMAGE_LOADER_ID = 1;
 
     String imageUrl;
 
@@ -46,34 +37,8 @@ public class FilmDetailActivity extends FragmentActivity implements android.supp
         TextView rateTextView = (TextView) findViewById(R.id.rate_detail);
         rateTextView.setText(rate+"/10");
 
-        //getSupportLoaderManager().initLoader(IMAGE_LOADER_ID, null, this);
-
-        ConnectivityManager connMgr = (ConnectivityManager)
-                getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
-
-        if (networkInfo != null && networkInfo.isConnected()) {
-            LoaderManager loaderManager = getLoaderManager();
-            loaderManager.initLoader(IMAGE_LOADER_ID, null, null);
-        }
-
-    }
-
-    @Override
-    public android.support.v4.content.AsyncTaskLoader<Bitmap> onCreateLoader(int id, @Nullable Bundle args) {
-
-        return new ImageLoader(this, imageUrl);
-    }
-
-    @Override
-    public void onLoadFinished(@NonNull Loader<Bitmap> loader, Bitmap image) {
         ImageView coverImage = (ImageView) findViewById(R.id.image_detail);
-        coverImage.setImageBitmap(image);
-
+        Picasso.with(this).load(imageUrl).into(coverImage);
     }
 
-    @Override
-    public void onLoaderReset(@NonNull Loader<Bitmap> loader) {
-
-    }
 }

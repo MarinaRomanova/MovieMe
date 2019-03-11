@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#000000</color>
-    <color name="colorPrimaryDark">#212121</color>
-    <color name="colorAccent">#FFDE03</color>
-    <color name="colorTab">#B00020</color>
+    <color name="colorPrimary">#d50000</color>
+    <color name="colorPrimaryDark">#9b0000</color>
+    <color name="colorPrimaryLight">#ff5131</color>
+    <color name="colorAccent">#ffab40</color>
+    <color name="colorTab">#d50000</color>
     <color name="colorTextTitle">#FFFFFF</color>
     <color name="colorFragmentBackground">#FFFFFF</color>
+    <color name="colorSecondary">#000000</color>
 
 </resources>
+
+<!--<color name="colorPrimary">#000000</color>-->
+<!--<color name="colorPrimaryDark">#212121</color>-->
+<!--<color name="colorAccent">#FFDE03</color>-->
+<!--<color name="colorTab">#d50000</color>-->
+<!--<color name="colorTextTitle">#FFFFFF</color>-->
+<!--<color name="colorFragmentBackground">#FFFFFF</color>-->

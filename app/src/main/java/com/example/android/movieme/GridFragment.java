@@ -37,7 +37,7 @@ public class GridFragment extends Fragment implements android.support.v4.app.Loa
     private static final int FILM_LOADER_ID = 0;
     GridViewAdapter gridViewAdapter;
     View rootView;
-    //SharedPreferences sharedPreferences;
+    SharedPreferences sharedPreferences;
     //TextView that is displayed when the list is empty
     private TextView anEmptyStateTextView;
 
@@ -50,6 +50,7 @@ public class GridFragment extends Fragment implements android.support.v4.app.Loa
 
 
         rootView = inflater.inflate(R.layout.grid_tab, container, false);
+        anEmptyStateTextView = rootView.findViewById(R.id.empty_view);
         gridViewAdapter = new GridViewAdapter(getActivity(), new ArrayList<Films>());
         GridView gridView = rootView.findViewById(R.id.grid_view);
         gridView.setAdapter(gridViewAdapter);
@@ -62,7 +63,6 @@ public class GridFragment extends Fragment implements android.support.v4.app.Loa
                 Intent intent = new Intent(getContext(), FilmDetailActivity.class);
                 intent.putExtra("title", currentFilm.getFilmTitle());
                 intent.putExtra("overview", currentFilm.getOverview());
-                //intent.putExtra("cover", currentFilm.getPosterPath());
                 intent.putExtra("date", currentFilm.getReleaseDate());
                 intent.putExtra("rate", currentFilm.getVote());
                 intent.putExtra("position", position);
@@ -85,11 +85,11 @@ public class GridFragment extends Fragment implements android.support.v4.app.Loa
         } else {
             View loadingIndicator = rootView.findViewById(R.id.loading_indicator);
             loadingIndicator.setVisibility(View.GONE);
-            anEmptyStateTextView = (TextView) rootView.findViewById(R.id.empty_view);
+            //anEmptyStateTextView = (TextView) rootView.findViewById(R.id.empty_view);
             anEmptyStateTextView.setText(R.string.no_internet_connection);
         }
-       // setHasOptionsMenu(true);
-        //sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+       setHasOptionsMenu(true);
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
         return rootView;
     }
 
@@ -104,9 +104,6 @@ public class GridFragment extends Fragment implements android.support.v4.app.Loa
         // Hide loading indicator because the data has been loaded
         View loadingIndicator = rootView.findViewById(R.id.loading_indicator);
         loadingIndicator.setVisibility(View.GONE);
-
-        // Set empty state text to display "No films to display."
-        //anEmptyStateTextView.setText(R.string.no_films);
         // Clear the adapter of previous news data
         gridViewAdapter.clear();
 
@@ -114,6 +111,9 @@ public class GridFragment extends Fragment implements android.support.v4.app.Loa
         // data set. This will trigger the ListView to update.
         if (films != null && !films.isEmpty()) {
             gridViewAdapter.addAll(films);
+        } else {
+            // Set empty state text to display "No films to display."
+            anEmptyStateTextView.setText(R.string.no_films);
         }
     }
 
@@ -133,6 +133,7 @@ public class GridFragment extends Fragment implements android.support.v4.app.Loa
         switch (item.getItemId()) {
             case R.id.action_settings:
                 Intent settingsIntent = new Intent(getContext(), SettingsActivity.class);
+                //settingsIntent.setFlags(Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED );
                 startActivity(settingsIntent);
                 return true;
             default:

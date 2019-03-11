@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
     tools:context="com.example.android.movieme.GridFragment">
 
     <GridView
@@ -12,8 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:numColumns="2"
-        android:layout_marginTop="@dimen/padding_small"
-        android:padding="@dimen/padding_small"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="@dimen/half_margin"
+        android:paddingRight="@dimen/half_margin"
         android:drawSelectorOnTop="true"/>
 
     <!-- Empty view is only visible when the list has no items. -->
